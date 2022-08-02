@@ -7,6 +7,9 @@ on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
+    # Update touchpanel firmware in case we ship newer firmware in /odm
+    write /proc/touchpanel/tp_fw_update 0
+
 on boot
     # Workaround for adb not coming up
     setprop sys.usb.config mtp,adb
