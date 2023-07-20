@@ -14,3 +14,6 @@ on boot
     # Workaround for adb not coming up
     setprop sys.usb.config mtp,adb
     setprop sys.usb.config adb
+
+    # Set OPPO project ID
+    setprop ro.separate.soft 19691
