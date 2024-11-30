@@ -4,22 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common DerpFest stuff
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from RMX1971 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Official-ify
-DERP_BUILDTYPE := Official
-
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1971
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := derp_RMX1971
+PRODUCT_NAME := lineage_RMX1971
 PRODUCT_MODEL := RMX1971
 
 PRODUCT_SYSTEM_NAME := RMX1971
