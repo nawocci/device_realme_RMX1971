@@ -167,7 +167,7 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.RMX1971 \
-    vendor.oppo.hardware.biometrics.fingerprint@2.1
+    vendor.oplus.hardware.biometrics.fingerprint@2.1
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
