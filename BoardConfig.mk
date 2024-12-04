@@ -15,6 +15,8 @@
 
 DEVICE_PATH := device/realme/RMX1971
 
+
+ALLOW_MISSING_DEPENDENCIES=true
 DISABLE_APEX_LIBS_ABSENCE_CHECK := true
 
 # Architecture
