@@ -4,12 +4,18 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common LineageOS stuff
+# Inherit common AOSP configurations
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
+
+# Inherit common LineageOS configurations
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Inherit from RMX1971 device
+# Inherit device configurations
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Target configurations
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1971
 PRODUCT_MANUFACTURER := realme
