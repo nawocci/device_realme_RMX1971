@@ -387,7 +387,6 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.RealmeParts.rc \
     init.oppo.rc \
     init.oppo.display.rc \
     init.qcom.early_boot.sh \
@@ -405,14 +404,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
-
-# Realme specific packages
-PRODUCT_PACKAGES += \
-    RealmeDoze \
-    RealmeParts
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp_whitelist_org.device.Realmeparts.xml:system/etc/permissions/privapp_whitelist_org.device.Realmeparts.xml
 
 # Remove Unwanted Packages
 PRODUCT_PACKAGES += \
