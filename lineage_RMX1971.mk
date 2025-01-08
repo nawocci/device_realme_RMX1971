@@ -4,11 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Pixelage stuff
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_EXCLUDES_AUDIOFX := true
-$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from RMX1971 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -16,7 +13,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1971
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := pixelage_RMX1971
+PRODUCT_NAME := lineage_RMX1971
 PRODUCT_MODEL := RMX1971
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
@@ -28,6 +25,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=RMX1971 \
     SystemDevice=RMX1971 \
     SystemName=RMX1971
-
-# Sign builds
-PRODUCT_DEFAULT_DEV_CERTIFICATE := .android-certs/releasekey
