@@ -119,6 +119,7 @@ TW_THEME := portrait_hdpi
 TW_USE_FSCRYPT_POLICY := 1
 TW_H_OFFSET := -80
 TW_Y_OFFSET := 80
+TW_FRAMERATE := 60
 
 TARGET_RECOVERY_DEVICE_MODULES += \
     android.hidl.allocator@1.0 \
