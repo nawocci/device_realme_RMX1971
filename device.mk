@@ -21,7 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Rootdir
-PRODUCT_PACKAGES += fstab.qcom
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.recovery.qcom.rc
 
 # Shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
