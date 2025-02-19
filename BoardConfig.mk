@@ -52,6 +52,7 @@ BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 
 TARGET_COPY_OUT_PRODUCT := system/product
 TARGET_COPY_OUT_SYSTEM_EXT := system/system_ext
+TARGET_COPY_OUT_VENDOR := vendor
 
 # Recovery
 TARGET_NO_RECOVERY := true
