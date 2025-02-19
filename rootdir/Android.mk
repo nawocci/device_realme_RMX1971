@@ -14,17 +14,12 @@
 # limitations under the License.
 #
 
-# APEX
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+LOCAL_PATH := $(call my-dir)
 
-# GSI
-$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
-
-# Rootdir
-PRODUCT_PACKAGES += fstab.qcom
-
-# Shipping API level
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
-
-# Soong
-PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+include $(CLEAR_VARS)
+LOCAL_MODULE       := fstab.qcom
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH  := $(TARGET_RAMDISK_OUT)
+LOCAL_MODULE_TAGS  := optional
+LOCAL_SRC_FILES    := etc/fstab.qcom
+include $(BUILD_PREBUILT)
