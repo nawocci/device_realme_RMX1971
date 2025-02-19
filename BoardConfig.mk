@@ -56,3 +56,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Recovery
 TARGET_NO_RECOVERY := true
+
+# SEpolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
