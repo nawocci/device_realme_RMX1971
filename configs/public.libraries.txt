@@ -1,0 +1,12 @@
+libqti-perfd-client.so
+libadsprpc.so
+libcdsprpc.so
+libsdsprpc.so
+libfastcvopt.so
+liblistensoundmodel2.so
+libOpenCL.so
+libstdc++.so
+libmidasserviceintf.so
+libOppoAlgoClient.so
+vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0.so
+libOppoAPSMemMgr.so
